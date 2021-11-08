@@ -1,0 +1,77 @@
+.container_carousal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+  
+  .carousel-inner .carousel-item {
+    transition: transform 1.5s ease;
+  }
+  
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+  }
+  
+
+  
+  #pad {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .color-1, .color-2, .color-3, .color-4, .color-5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .color-1 {
+    background-image: url(../images/jilbaab/Black-Jilbaab_Product-Image-300x300.png);
+    
+  }
+  
+  .color-2 {
+    background-image: url(../images/jilbaab/Dusty-Pink_Product-Image-300x300.png);
+  }
+  
+  .color-3 {
+    background-image: url(../images/jilbaab/Khaki_Product-Image-300x300.png);
+  }
+  
+  .color-4 {
+    background-image: url(../images/jilbaab/Teal-Blue_5-300x300.jpg);
+  }
+  
+  .color-5 {
+    background-image: url(../images/jilbaab/Mauve_Product-Image-300x300.png);
+  }
+  
+  .bordered {
+   
+    height: 20rem;
+  }
+  
+  .overlay {
+    z-index: 1;
+    padding: 0;
+    border: none;
+    background: rgba(68, 68, 68, 0.5);
+  }

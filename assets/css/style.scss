@@ -228,6 +228,9 @@ a {
             padding: 15px;
         }
         ul{
+            .footer_line {
+                display: contents;
+            }
             display: flex;
             justify-content: center;
             align-items: center;

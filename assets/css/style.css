@@ -93,13 +93,15 @@ nav .nav_menu a {
 .ayah_section {
   background-color: #566b85;
   height: 40vh;
-  font-size: 2rem;
   color: #fff;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Dancing Script", handwriting;
+}
+.ayah_section p {
+  font-size: 2rem;
 }
 
 .second_section .card_collection {
@@ -124,7 +126,14 @@ nav .nav_menu a {
 .footer {
   background-color: #566b85;
 }
-.footer ul > li {
+.footer span.copy_right {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.footer ul .footer_line {
+  display: none;
+}
+.footer ul li {
   list-style: none;
   color: #fff;
 }
@@ -155,5 +164,34 @@ nav .nav_menu a {
   }
   .first_section h1 p {
     word-spacing: 2pt;
+  }
+
+  .ayah_section .ayah_text {
+    margin: 20px;
+  }
+  .ayah_section p {
+    font-size: 1rem;
+  }
+
+  .section_title h1 {
+    font-size: 2rem;
+  }
+
+  .footer span.copy_right {
+    font-size: 0.5rem;
+  }
+  .footer .azure_footer {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

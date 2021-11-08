@@ -119,11 +119,14 @@ a {
 .ayah_section{
     background-color: $primary_color;
     height: 40vh;
-    font-size: 2rem;
     color: #fff;
     text-align: center;
     @include disp_flex();
     font-family: 'Dancing Script',handwriting;
+    p{
+        font-size: 2rem;
+
+    }
 
 }
 
@@ -150,10 +153,19 @@ a {
 }
 .footer{
     background-color: $primary_color;
-    ul>li{
+    span.copy_right{
+        font-size: 0.8rem;
+        color: #fff;
+    }
+    ul{
+        .footer_line{
+            display: none;
+        }
+        li{
         list-style: none;
         color: $primary_white_text
         }
+    }
     .footer_menu_links{
 
         @include disp_flex();
@@ -190,5 +202,40 @@ a {
         }
     }
 
-    
+    .ayah_section{  
+        .ayah_text{
+            margin: 20px;
+        } 
+        p{
+
+            font-size: 1rem;
+        }    
+    }
+    .section_title{
+        h1{
+
+            font-size: 2rem;
+        }
+    }
+
+    .footer{
+        span.copy_right{
+            font-size: 0.5rem;
+            
+        }
+        .azure_footer{
+            font-size: 1.5rem;
+            padding: 15px;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            li{
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+    }
+    }
 }

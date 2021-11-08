@@ -190,6 +190,9 @@ nav .nav_menu a {
     align-items: center;
     margin-bottom: 0;
   }
+  .footer ul .footer_line {
+    display: contents;
+  }
   .footer ul li {
     font-size: 0.8rem;
     padding: 10px;

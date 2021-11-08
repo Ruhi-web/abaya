@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Regular.woff2') format('woff2'),
+        url('../../fonts/DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$primary_dark_color: #000;
+$primary_white_text: #fff;
+$nav_bg_color: rgba(0, 0, 0, 0.165);
+$btn_bg_grey: #00000075;
+$primary_color: #566b85 ;
+
+
+
+@mixin disp_flex {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+font-family: 'Times New Roman', Times, sans-serif  !important;
+}
+
+img {
+width: 100%;
+height: auto;
+}
+.section{
+    margin-top: 40px;
+}
+
+.section_title{
+    color: $primary_color;
+}
+nav {
+
+background-color: rgba(0, 0, 0, 0.164);
+transition: ease-out;
+
+.navbar-brand {
+    font-family: 'Scriptina';
+    font-size: 2rem;
+}
+
+a {
+    color: #fff;
+}
+
+.nav_menu {
+
+    a {
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+}
+}
+
+.first_section {
+    background-image: url('../images/banner_image.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.281);
+    }
+
+    .first_section_text {
+        text-align: center;
+        color: #fff;
+        line-height: 25px;
+        z-index: 999;
+        
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 2;
+
+    }
+
+    p {
+        word-spacing: 8pt;
+    }
+
+    .banner_view_btn {
+        border: none;
+        padding: 10px 20px;
+        background: $btn_bg_grey;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+}
+
+.ayah_section{
+    background-color: $primary_color;
+    height: 40vh;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    @include disp_flex();
+    font-family: 'Dancing Script',handwriting;
+
+}
+
+.second_section{
+    .card_collection{
+        @include disp_flex;
+        .card{
+            margin: 2px;
+        }
+    }
+}
+
+.contact_section{
+    .contact_form{
+
+        @include disp_flex();
+        form{
+            .form_submit{
+                background-color: $primary_color;
+                color: $primary_white_text;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $primary_color;
+    ul>li{
+        list-style: none;
+        color: $primary_white_text
+        }
+    .footer_menu_links{
+
+        @include disp_flex();
+    }
+    .azure_footer{
+        font-family: 'Scriptina';
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    nav {
+        .social-icon {
+            display: none;
+        }
+
+        .nav_menu {
+            background-color: $primary_color;
+            .navbar-nav {
+                span {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .first_section h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+        p {
+            word-spacing: 2pt;
+        }
+    }
+
+    
+}

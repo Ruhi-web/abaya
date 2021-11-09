@@ -64,7 +64,6 @@ nav .nav_menu a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.281);
 }
 .first_section .first_section_text {
   text-align: center;
@@ -75,9 +74,11 @@ nav .nav_menu a {
 .first_section h1 {
   font-size: 4rem;
   line-height: 2;
+  text-shadow: 3px -2px 4px #575252bf;
 }
 .first_section p {
   word-spacing: 8pt;
+  text-shadow: 3px -2px 4px #575252bf;
 }
 .first_section .banner_view_btn {
   border: none;
@@ -110,7 +111,10 @@ nav .nav_menu a {
   align-items: center;
 }
 .second_section .card_collection .card {
-  margin: 2px;
+  margin: 20px;
+  box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
 }
 
 .contact_section .contact_form {

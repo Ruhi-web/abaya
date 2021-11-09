@@ -83,7 +83,7 @@ a {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.281);
+        // background-color: rgba(0, 0, 0, 0.281);
     }
 
     .first_section_text {
@@ -97,11 +97,14 @@ a {
     h1 {
         font-size: 4rem;
         line-height: 2;
+        text-shadow: 3px -2px 4px #575252bf;
 
     }
 
     p {
         word-spacing: 8pt;
+        text-shadow: 3px -2px 4px #575252bf;
+
     }
 
     .banner_view_btn {
@@ -134,7 +137,10 @@ a {
     .card_collection{
         @include disp_flex;
         .card{
-            margin: 2px;
+            margin: 20px;
+            box-shadow: 9px -5px 18px -4px rgba(0,0,0,0.65);
+-webkit-box-shadow: 9px -5px 18px -4px rgba(0,0,0,0.65);
+-moz-box-shadow: 9px -5px 18px -4px rgba(0,0,0,0.65);
         }
     }
 }

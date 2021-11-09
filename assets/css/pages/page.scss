@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.jilbaab_section {
+.page__section {
     @include disp_flex();
     min-height: 70vh;
     margin-top: 25px;
@@ -18,6 +18,7 @@
     @include disp_flex();
     text-transform: uppercase;
     color: #566b85;
+    font-weight:bolder;
 }
 
 .color-circle {
@@ -30,3 +31,8 @@
     opacity: 0.8;
     border: 1px solid;
 }
+
+table, th, td {
+    border: 1px solid rgb(255, 253, 253);
+    border-collapse: collapse;
+  }

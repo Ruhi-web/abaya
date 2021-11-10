@@ -247,15 +247,29 @@ nav {
         }
     }
 
-    .first_section h1 {
-        font-size: 2.5rem;
-        line-height: 1;
+    .first_section {
+        
+            background-image: url(../images/banner_image.png);
+            background-position: left;
+            h1 {
+                font-size: 2.5rem;
+                line-height: 1;
+            }
+                p {
+                    word-spacing: 2pt;
+                }
 
-        p {
-            word-spacing: 2pt;
+    } 
+
+    .second_section{
+        .card_collection{
+
+            .card{
+                margin: 5px;
+            }
         }
     }
-
+    
     .ayah_section {
         .ayah_text {
             margin: 20px;

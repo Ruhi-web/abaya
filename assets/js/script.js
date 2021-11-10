@@ -19,6 +19,7 @@ $(document).ready(function () {
 		var height = window.innerHeight;
 
 		console.log(width);
+        
 		if (width < 1080) {
             var total = 1;
 		} else {

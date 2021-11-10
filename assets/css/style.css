@@ -121,12 +121,17 @@ nav .nav_menu a:hover {
   margin: 20px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  filter: brightness(120%);
+  filter: brightness(110%);
 }
 .second_section .card_collection .card:hover {
   box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
   -moz-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
+}
+.second_section .card_collection .card a.card_link {
+  color: #000;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 .second_section .card_collection .card .card_desc_title {
   font-weight: 700;

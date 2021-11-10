@@ -208,6 +208,14 @@ nav {
     .footer_menu_links {
 
         @include disp_flex();
+        ul li a{
+
+            color:$primary_white_text;
+            &:hover{
+                color: $primary_white_text;
+                text-decoration-line: none;
+            }
+        }
     }
 
     .azure_footer {

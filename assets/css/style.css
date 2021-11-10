@@ -161,6 +161,14 @@ nav .nav_menu a:hover {
   justify-content: center;
   align-items: center;
 }
+.footer .footer_menu_links ul li a {
+  color: #fff;
+}
+.footer .footer_menu_links ul li a:hover {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
 .footer .azure_footer {
   font-family: "Scriptina";
   font-size: 2rem;

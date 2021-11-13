@@ -65,6 +65,7 @@ nav {
 
     a {
         color: #fff;
+
     }
 
     .nav_menu {
@@ -97,6 +98,29 @@ nav {
         width: 100%;
         height: 100%;
         // background-color: rgba(0, 0, 0, 0.281);
+    }
+
+    .slideInUp {
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes slideInUp {
+        0% {
+            -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+            visibility: visible;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
     }
 
     .first_section_text {
@@ -147,6 +171,45 @@ nav {
 
 }
 
+.about_section {
+    position: relative;
+
+    .about_left {
+        width: 80%;
+        margin-left: 100px;
+        height: 75vh;
+        filter: brightness(124%);
+        background: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/abaya/Blue_1.png);
+    }
+
+    .about_right {
+        border: 1px solid #959090;
+        position: absolute;
+        top: 50%;
+        left: 27%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        box-shadow: 5px 6px 10px 1px #959090;
+        ;
+        -webkit-box-shadow: 5px 6px 10px 1px #959090;
+        ;
+        -moz-box-shadow: 5px 6px 10px 1px #959090;
+        ;
+
+        .about_text {
+            padding: 15px;
+
+            h3 {
+                font-size: 3.4rem;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
 .second_section {
 
     .card_collection {
@@ -164,10 +227,12 @@ nav {
                 -webkit-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
                 -moz-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
             }
-            a.card_link{
+
+            a.card_link {
                 color: $primary_dark_color;
                 text-decoration-line: none;
             }
+
             .card_desc_title {
                 font-weight: 700;
             }
@@ -211,10 +276,12 @@ nav {
     .footer_menu_links {
 
         @include disp_flex();
-        ul li a{
 
-            color:$primary_white_text;
-            &:hover{
+        ul li a {
+            cursor: pointer;
+            color: $primary_white_text;
+
+            &:hover {
                 color: $primary_white_text;
                 text-decoration-line: none;
             }
@@ -227,6 +294,9 @@ nav {
     }
 
 }
+
+
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -248,28 +318,30 @@ nav {
     }
 
     .first_section {
-        
-            background-image: url(../images/banner_image.png);
-            background-position: left;
-            h1 {
-                font-size: 2.5rem;
-                line-height: 1;
-            }
-                p {
-                    word-spacing: 2pt;
-                }
 
-    } 
+        background-image: url(../images/banner_image.png);
+        background-position: left;
 
-    .second_section{
-        .card_collection{
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
 
-            .card{
+        p {
+            word-spacing: 2pt;
+        }
+
+    }
+
+    .second_section {
+        .card_collection {
+
+            .card {
                 margin: 5px;
             }
         }
     }
-    
+
     .ayah_section {
         .ayah_text {
             margin: 20px;

@@ -177,19 +177,19 @@ nav {
     .about_left {
         width: 80%;
         margin-left: 100px;
-        height: 75vh;
-        filter: brightness(124%);
+        height: 80vh;
+        filter: brightness(120%);
         background: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url(../images/abaya/Blue_1.png);
+        background-size: contain;
+        background-image: url(../images/abaya/Sand_1.png);
     }
 
     .about_right {
         border: 1px solid #959090;
         position: absolute;
         top: 50%;
-        left: 27%;
+        left: 25%;
         transform: translate(-50%, -50%);
         background-color: #fff;
         box-shadow: 5px 6px 10px 1px #959090;
@@ -203,7 +203,7 @@ nav {
             padding: 15px;
 
             h3 {
-                font-size: 3.4rem;
+                font-size: 3rem;
                 font-weight: bolder;
             }
         }

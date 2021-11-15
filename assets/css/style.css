@@ -30,7 +30,7 @@ img {
 
 .section_title {
   color: #566b85;
-  font-family: fantasy;
+  font-family: "Dancing Script";
   text-transform: uppercase;
 }
 
@@ -97,9 +97,10 @@ nav .nav_menu a:hover {
   z-index: 999;
 }
 .first_section h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 2;
   text-shadow: 3px -2px 4px #575252bf;
+  font-family: "Dancing Script";
 }
 .first_section p {
   word-spacing: 8pt;

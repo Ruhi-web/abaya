@@ -31,6 +31,7 @@ img {
 .section_title {
   color: #566b85;
   font-family: fantasy;
+  text-transform: uppercase;
 }
 
 nav {

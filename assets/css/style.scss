@@ -333,11 +333,30 @@ nav {
 
     }
 
+    .about_section {
+        .about_left {
+            width: 100%;
+            margin-left: 0;
+            height: 55vh;
+        }
+
+        .about_right {
+            position: static !important;
+            transform: none;
+
+            .about_text {
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
     .second_section {
         .card_collection {
 
             .card {
-                margin: 5px;
+                margin: 25px;
             }
         }
     }

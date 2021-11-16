@@ -254,6 +254,10 @@ nav .nav_menu a:hover {
     text-align: center;
   }
 
+  .whatsapp {
+    width: 22%;
+  }
+
   .first_section {
     background-image: url(../images/banner_image.png);
     background-position: left;

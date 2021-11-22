@@ -33,7 +33,7 @@ html {
 
 body {
     font-family: 'Times New Roman', Times, sans-serif !important;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 img {
@@ -136,6 +136,7 @@ nav {
             margin: 10px;
             border: 10px solid white;
             cursor: pointer;
+
             img {
                 border: 10px solid white;
                 // border-radius: 25px 25px;
@@ -159,7 +160,7 @@ nav {
             -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
 
-            &:hover{
+            &:hover {
                 height: 53vh;
                 width: 33%;
             }
@@ -181,7 +182,8 @@ nav {
             box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-            &:hover{
+
+            &:hover {
                 width: 27%;
                 height: 39vh;
             }
@@ -205,10 +207,52 @@ nav {
             box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
-            &:hover{
+
+            &:hover {
                 width: 25%;
                 height: 57vh;
             }
         }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .first_section {
+
+        min-height: 180vh;
+
+        .first_section_cards {
+            .azureHijab {
+
+                height: 40vh;
+                width: 68%;
+                position: absolute;
+                top: 198px;
+                left: 45px;
+            }
+
+            .azure2 {
+                width: 68%;
+                height: 40vh;
+                position: absolute;
+                top: 83%;
+                left: 14%;
+            }
+
+              .azure3{
+                width: 68%;
+                height: 40vh;
+                position: absolute;
+                top: 130%;
+                left: 14%;
+                box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            }
+        }
+
+
+
     }
 }

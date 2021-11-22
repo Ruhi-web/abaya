@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: "Times New Roman", Times, sans-serif !important;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 img {
@@ -178,4 +178,34 @@ nav .nav_menu a:hover {
 .first_section .first_section_cards .azure3:hover {
   width: 25%;
   height: 57vh;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .first_section {
+    min-height: 180vh;
+  }
+  .first_section .first_section_cards .azureHijab {
+    height: 40vh;
+    width: 68%;
+    position: absolute;
+    top: 198px;
+    left: 45px;
+  }
+  .first_section .first_section_cards .azure2 {
+    width: 68%;
+    height: 40vh;
+    position: absolute;
+    top: 83%;
+    left: 14%;
+  }
+  .first_section .first_section_cards .azure3 {
+    width: 68%;
+    height: 40vh;
+    position: absolute;
+    top: 130%;
+    left: 14%;
+    box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  }
 }/*# sourceMappingURL=style.css.map */

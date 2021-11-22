@@ -33,6 +33,7 @@ html {
 
 body {
     font-family: 'Times New Roman', Times, sans-serif !important;
+    overflow: hidden;
 }
 
 img {
@@ -40,77 +41,66 @@ img {
     height: auto;
 }
 
-.section {
-    margin-top: 40px;
-}
-
-.section_title {
-    color: $primary_color;
-    font-family: 'Dancing Script';
-    text-transform: uppercase;
-}
-.whatsapp{
+.whatsapp {
     position: fixed;
     right: 0;
     bottom: 0;
     padding: 10px;
     width: 6%;
     transition: 0.5s ease-in-out;
-    &:hover{
+
+    &:hover {
 
         width: 7%;
     }
 }
+
 nav {
 
-    background-color: rgba(0, 0, 0, 0.164);
+    background-color: #fff !important;
     transition: ease-out;
+
+    .wrap_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .navbar-brand {
         font-family: 'Scriptina';
-        font-size: 2rem;
+        font-size: 2.8rem;
+        color: #b38292;
+        margin-bottom: 30px;
 
         &:hover {
-            color: #fff;
+            color: #000;
         }
     }
 
-    a {
-        color: #fff;
-
-    }
 
     .nav_menu {
 
         a {
             font-family: inherit;
             text-transform: uppercase;
-            font-size: 0.8rem;
+            font-size: 1rem;
+            color: #d7a7b7;
 
             &:hover {
-                color: #fff;
+                color: #000;
             }
         }
     }
 }
 
 .first_section {
-    background-image: url('../images/banner_image.png');
+    background-image: url('../images/aureConnect/bannerAzure.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    position: relative;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background-color: rgba(0, 0, 0, 0.281);
-    }
 
     .slideInUp {
         -webkit-animation-name: slideInUp;
@@ -121,7 +111,7 @@ nav {
         animation-fill-mode: both;
     }
 
-    @-webkit-keyframes slideInUp {
+    @keyframes slideInUp {
         0% {
             -webkit-transform: translateY(150%);
             transform: translateY(150%);
@@ -135,290 +125,89 @@ nav {
 
     }
 
-    .first_section_text {
-        text-align: center;
-        color: #fff;
-        line-height: 25px;
-        z-index: 999;
+    .first_section_cards {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
 
-    }
-
-    h1 {
-        font-size: 5rem;
-        line-height: 2;
-        text-shadow: 3px -2px 4px #575252bf;
-        font-family: 'Dancing Script';
-    }
-
-    p {
-        word-spacing: 8pt;
-        text-shadow: 3px -2px 4px #575252bf;
-
-    }
-
-    .banner_view_btn {
-        border: none;
-        padding: 10px 20px;
-        background: $btn_bg_grey;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        margin-top: 40px;
-        cursor: pointer;
-    }
-}
-
-.ayah_section {
-    background-color: $primary_color;
-    height: 40vh;
-    color: #fff;
-    text-align: center;
-    @include disp_flex();
-    font-family: 'Dancing Script', handwriting;
-
-    p {
-        font-size: 2rem;
-
-    }
-
-}
-
-.about_section {
-    position: relative;
-
-    .about_left {
-        width: 80%;
-        margin-left: 100px;
-        height: 80vh;
-        filter: brightness(120%);
-        background: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../images/abaya/Sand_1.png);
-    }
-
-    .about_right {
-        border: 1px solid #959090;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        box-shadow: 5px 6px 10px 1px #959090;
-        ;
-        -webkit-box-shadow: 5px 6px 10px 1px #959090;
-        ;
-        -moz-box-shadow: 5px 6px 10px 1px #959090;
-        ;
-
-        .about_text {
-            padding: 15px;
-
-            h3 {
-                font-size: 3rem;
-                font-weight: bolder;
-            }
-        }
-    }
-}
-
-.second_section {
-
-    .card_collection {
-        @include disp_flex;
-
-        .card {
-
-            margin: 20px;
+        .azure_section {
+            width: 18%;
+            height: fit-content;
+            margin: 10px;
+            border: 10px solid white;
             cursor: pointer;
-            transition: 0.3s ease-in-out;
-            filter: brightness(110%);
-
-            &:hover {
-                box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
-                -webkit-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
-                -moz-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
-            }
-
-            a.card_link {
-                color: $primary_dark_color;
-                text-decoration-line: none;
-            }
-
-            .card_desc_title {
-                font-weight: 700;
+            img {
+                border: 10px solid white;
+                // border-radius: 25px 25px;
             }
         }
-    }
-}
 
-.contact_section {
-    .contact_form {
+        .azureHijab {
+            background-image: url(../images/aureConnect/azurehijab.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #8e24aaad;
+            height: 52vh;
+            width: 32%;
+            position: absolute;
+            top: 325px;
+            left: 130px;
+            z-index: 2;
+            transition: 0.5s ease-in-out;
+            box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
 
-        @include disp_flex();
-
-        form {
-            .form_submit {
-                background-color: $primary_color;
-                color: $primary_white_text;
+            &:hover{
+                height: 53vh;
+                width: 33%;
             }
         }
-    }
-}
 
-.footer {
-    background-color: $primary_color;
-
-    span.copy_right {
-        font-size: 0.8rem;
-        color: #fff;
-    }
-
-    ul {
-        .footer_line {
-            display: none;
-        }
-
-        li {
-            list-style: none;
-            color: $primary_white_text
-        }
-    }
-
-    .footer_menu_links {
-
-        @include disp_flex();
-
-        ul li a {
-            cursor: pointer;
-            color: $primary_white_text;
-
-            &:hover {
-                color: $primary_white_text;
-                text-decoration-line: none;
+        .azure2 {
+            background-image: url(../images/bakery3.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #251481;
+            width: 26%;
+            height: 38vh;
+            position: absolute;
+            top: 25%;
+            left: 39%;
+            z-index: 1;
+            transition: 0.5s ease-in-out;
+            box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            &:hover{
+                width: 27%;
+                height: 39vh;
             }
         }
-    }
-
-    .azure_footer {
-        font-family: 'Scriptina';
-        font-size: 2rem;
-    }
-
-}
 
 
+        .azure3 {
+            background-image: url(../images/bakery1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #7cb342;
+            width: 24%;
+            height: 56vh;
+            position: absolute;
+            top: 30%;
+            left: 61%;
+            z-index: 0;
+            transition: 0.5s ease-in-out;
 
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
-    nav {
-        .social-icon {
-            display: none;
-        }
-
-        .nav_menu {
-            background-color: $primary_color;
-
-            .navbar-nav {
-                span {
-                    text-align: center;
-                }
-            }
-        }
-    }
-    .whatsapp{
-        
-        width: 22%;
-       
-    }
-    .first_section {
-
-        background-image: url(../images/banner_image.png);
-        background-position: left;
-
-        h1 {
-            font-size: 2.5rem;
-            line-height: 1;
-        }
-
-        p {
-            word-spacing: 2pt;
-        }
-
-    }
-
-    .about_section {
-        .about_left {
-            width: 100%;
-            margin-left: 0;
-            height: 55vh;
-        }
-
-        .about_right {
-            position: static !important;
-            transform: none;
-
-            .about_text {
-                h3 {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-
-    .second_section {
-        .card_collection {
-
-            .card {
-                margin: 25px;
-            }
-        }
-    }
-
-    .ayah_section {
-        .ayah_text {
-            margin: 20px;
-        }
-
-        p {
-
-            font-size: 1rem;
-        }
-    }
-
-    .section_title {
-        h1 {
-
-            font-size: 2rem;
-        }
-    }
-
-    .footer {
-        span.copy_right {
-            font-size: 0.5rem;
-
-        }
-
-        .azure_footer {
-            font-size: 1.5rem;
-            padding: 15px;
-        }
-
-        ul {
-            .footer_line {
-                display: contents;
-            }
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 0;
-
-            li {
-                font-size: 0.8rem;
-                padding: 10px;
+            box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+            &:hover{
+                width: 25%;
+                height: 57vh;
             }
         }
     }

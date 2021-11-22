@@ -138,16 +138,16 @@ nav .nav_menu a:hover {
   width: 33%;
 }
 .first_section .first_section_cards .azure2 {
-  background-image: url(../images/bakery3.jpeg);
+  background-image: url(../images/accessories.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-color: #251481;
+  background-color: #fff;
   width: 26%;
-  height: 38vh;
+  height: 50vh;
   position: absolute;
   top: 25%;
-  left: 39%;
+  left: 37%;
   z-index: 1;
   transition: 0.5s ease-in-out;
   box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
@@ -156,7 +156,7 @@ nav .nav_menu a:hover {
 }
 .first_section .first_section_cards .azure2:hover {
   width: 27%;
-  height: 39vh;
+  height: 51vh;
 }
 .first_section .first_section_cards .azure3 {
   background-image: url(../images/bakery1.jpeg);

@@ -104,6 +104,12 @@ nav .nav_menu a:hover {
   display: flex;
   justify-content: center;
 }
+.first_section .first_section_cards #azureHij:hover ~ #azure2 .azure2 {
+  filter: grayscale(1);
+}
+.first_section .first_section_cards #azureHij:hover ~ #azure3 .azure3 {
+  filter: grayscale(1);
+}
 .first_section .first_section_cards .azure_section {
   width: 18%;
   height: -webkit-fit-content;

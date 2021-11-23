@@ -130,17 +130,18 @@ nav {
         display: flex;
         justify-content: center;
         
-        #azureHij{
-            &:hover {
-                ~ #azure2{
-                    .azure2{
+        .azureHijab_wrap{
 
+            &:hover {
+                
+                ~ .azureHijab2{
+                    .azure2{
                         filter: grayscale(1);
                     }
                 }
-                ~ #azure3{
-                    .azure3{
 
+                ~ .azureHijab3{
+                    .azure3{
                         filter: grayscale(1);
                     }
                 }
@@ -161,6 +162,11 @@ nav {
                 // border-radius: 25px 25px;
             }
         }
+        .inverse{
+            filter: grayscale(1);
+        }
+
+        
 
         .azureHijab {
             background-image: url(../images/aureConnect/azurehijab.jpg);

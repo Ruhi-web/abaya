@@ -37,3 +37,29 @@ $(document).ready(function () {
 		}
 	});
 });
+
+
+
+$(document).ready(function () {
+
+$(function() {
+	$('#azure2').mouseenter(function() {
+	  $('#azureHij').addClass("inverse");
+	  $('#azure3').addClass("inverse");
+	}).mouseleave(function () {
+	  $('#azureHij').removeClass("inverse");
+	  $('#azure3').removeClass("inverse");
+	});
+  });
+
+$(function() {
+	$('#azure3').mouseenter(function() {
+	  $('#azureHij').addClass("inverse");
+	  $('#azure2').addClass("inverse");
+	}).mouseleave(function () {
+	  $('#azureHij').removeClass("inverse");
+	  $('#azure2').removeClass("inverse");
+	});
+  });
+
+});

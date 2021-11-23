@@ -104,10 +104,10 @@ nav .nav_menu a:hover {
   display: flex;
   justify-content: center;
 }
-.first_section .first_section_cards #azureHij:hover ~ #azure2 .azure2 {
+.first_section .first_section_cards .azureHijab_wrap:hover ~ .azureHijab2 .azure2 {
   filter: grayscale(1);
 }
-.first_section .first_section_cards #azureHij:hover ~ #azure3 .azure3 {
+.first_section .first_section_cards .azureHijab_wrap:hover ~ .azureHijab3 .azure3 {
   filter: grayscale(1);
 }
 .first_section .first_section_cards .azure_section {
@@ -121,6 +121,9 @@ nav .nav_menu a:hover {
 }
 .first_section .first_section_cards .azure_section img {
   border: 10px solid white;
+}
+.first_section .first_section_cards .inverse {
+  filter: grayscale(1);
 }
 .first_section .first_section_cards .azureHijab {
   background-image: url(../images/aureConnect/azurehijab.jpg);

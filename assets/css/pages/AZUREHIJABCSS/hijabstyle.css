@@ -323,19 +323,50 @@ nav .nav_menu a:hover {
   .whatsapp {
     width: 22%;
   }
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .first_section {
+    min-height: 180vh;
+  }
+  .first_section .first_section_cards .azureHijab {
+    height: 40vh;
+    width: 68%;
+    position: absolute;
+    top: 198px;
+    left: 45px;
+  }
+  .first_section .first_section_cards .azure2 {
+    width: 68%;
+    height: 40vh;
+    position: absolute;
+    top: 83%;
+    left: 14%;
+  }
+  .first_section .first_section_cards .azure3 {
+    width: 68%;
+    height: 40vh;
+    position: absolute;
+    top: 130%;
+    left: 14%;
+    box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  ._first_section {
     background-image: url(../images/banner_image.png);
     background-position: left;
   }
-  .first_section h1 {
+  ._first_section h1 {
     font-size: 2.5rem;
     line-height: 1;
   }
-  .first_section p {
+  ._first_section p {
     word-spacing: 2pt;
   }
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .about_section .about_left {
     width: 100%;
     margin-left: 0;
@@ -348,22 +379,26 @@ nav .nav_menu a:hover {
   .about_section .about_right .about_text h3 {
     font-size: 2rem;
   }
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .second_section .card_collection .card {
     margin: 25px;
   }
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .ayah_section .ayah_text {
     margin: 20px;
   }
   .ayah_section p {
     font-size: 1rem;
   }
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .section_title h1 {
     font-size: 2rem;
   }
-
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .footer span.copy_right {
     font-size: 0.5rem;
   }

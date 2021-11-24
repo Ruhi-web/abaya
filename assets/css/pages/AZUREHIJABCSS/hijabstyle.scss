@@ -10,8 +10,8 @@
 $primary_dark_color: #000;
 $primary_white_text: #fff;
 $nav_bg_color: rgba(0, 0, 0, 0.165);
-$btn_bg_grey: #00000075;
 $primary_color: #566b85;
+$primary_pink: #d7a7b7;
 
 
 
@@ -61,56 +61,53 @@ img {
         width: 7%;
     }
 }
+
 nav {
 
-    background-color: rgba(0, 0, 0, 0.164);
+    background-color: #fff !important;
     transition: ease-out;
+    border-bottom: 1px solid $primary_color;
+    .wrap_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .navbar-brand {
         font-family: 'Scriptina';
-        font-size: 2rem;
+        font-size: 2.8rem;
+        color: $primary_color;
+        margin-bottom: 30px;
 
         &:hover {
-            color: #fff;
+            color: #b38292;
         }
     }
 
-    a {
-        color: #fff;
-
-    }
 
     .nav_menu {
 
         a {
             font-family: inherit;
             text-transform: uppercase;
-            font-size: 0.8rem;
+            font-size: 1rem;
+            color: $primary_color;
 
             &:hover {
-                color: #fff;
+                color: #000;
             }
         }
     }
 }
 
 .first_section {
-    background-image: url('../../../images/banner_image.png');
+    background-image: url('../../../images/aureConnect/bannerAzure.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    position: relative;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background-color: rgba(0, 0, 0, 0.281);
-    }
 
     .slideInUp {
         -webkit-animation-name: slideInUp;
@@ -135,38 +132,213 @@ nav {
 
     }
 
-    .first_section_text {
-        text-align: center;
-        color: #fff;
-        line-height: 25px;
-        z-index: 999;
+    .first_section_cards {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        
+        
+       
+        
 
-    }
+        .azure_section {
+            width: 18%;
+            height: fit-content;
+            margin: 10px;
+            border: 10px solid white;
+            cursor: pointer;
 
-    h1 {
-        font-size: 5rem;
-        line-height: 2;
-        text-shadow: 3px -2px 4px #575252bf;
-        font-family: 'Dancing Script';
-    }
+            img {
+                border: 10px solid white;
+                // border-radius: 25px 25px;
+            }
+        }
+        .inverse{
+            filter: grayscale(1);
+        }
 
-    p {
-        word-spacing: 8pt;
-        text-shadow: 3px -2px 4px #575252bf;
+        
 
-    }
+        .azureHijab {
+            background-image: url(../../../images/aureConnect/azurehijab.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #8e24aaad;
+            height: 52vh;
+            width: 32%;
+            position: absolute;
+            top: 325px;
+            left: 130px;
+            z-index: 2;
+            transition: 0.5s ease-in-out;
+            box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
 
-    .banner_view_btn {
-        border: none;
-        padding: 10px 20px;
-        background: $btn_bg_grey;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        margin-top: 40px;
-        cursor: pointer;
+            &:hover {
+                height: 53vh;
+                width: 33%;
+                
+            }
+        }
+
+        .azure2 {
+            background-image: url(../../../images/accessories.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: #fff;
+            width: 26%;
+            height: 50vh;
+            position: absolute;
+            top: 25%;
+            left: 37%;
+            z-index: 1;
+            transition: 0.5s ease-in-out;
+            box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            filter: grayscale(1);
+            &:hover {
+                width: 27%;
+                height: 51vh;           
+            }
+        }
+
+
+        .azure3 {
+            background-image: url(../../../images/bakery1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #7cb342;
+            width: 24%;
+            height: 56vh;
+            position: absolute;
+            top: 30%;
+            left: 61%;
+            z-index: 0;
+            transition: 0.5s ease-in-out;
+            filter: grayscale(1);
+
+            box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+
+            &:hover {
+                width: 25%;
+                height: 57vh;
+            }
+        }
     }
 }
+// nav {
+
+//     background-color: rgba(0, 0, 0, 0.164);
+//     transition: ease-out;
+
+//     .navbar-brand {
+//         font-family: 'Scriptina';
+//         font-size: 2rem;
+
+//         &:hover {
+//             color: #fff;
+//         }
+//     }
+
+//     a {
+//         color: #fff;
+
+//     }
+
+//     .nav_menu {
+
+//         a {
+//             font-family: inherit;
+//             text-transform: uppercase;
+//             font-size: 0.8rem;
+
+//             &:hover {
+//                 color: #fff;
+//             }
+//         }
+//     }
+// }
+
+// ._first_section {
+//     background-image: url('../../../images/banner_image.png');
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     min-height: 100vh;
+//     position: relative;
+
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         // background-color: rgba(0, 0, 0, 0.281);
+//     }
+
+//     .slideInUp {
+//         -webkit-animation-name: slideInUp;
+//         animation-name: slideInUp;
+//         -webkit-animation-duration: 2s;
+//         animation-duration: 2s;
+//         -webkit-animation-fill-mode: both;
+//         animation-fill-mode: both;
+//     }
+
+//     @keyframes slideInUp {
+//         0% {
+//             -webkit-transform: translateY(150%);
+//             transform: translateY(150%);
+//             visibility: visible;
+//         }
+
+//         100% {
+//             -webkit-transform: translateY(0);
+//             transform: translateY(0);
+//         }
+
+//     }
+
+//     .first_section_text {
+//         text-align: center;
+//         color: #fff;
+//         line-height: 25px;
+//         z-index: 999;
+
+//     }
+
+//     h1 {
+//         font-size: 5rem;
+//         line-height: 2;
+//         text-shadow: 3px -2px 4px #575252bf;
+//         font-family: 'Dancing Script';
+//     }
+
+//     p {
+//         word-spacing: 8pt;
+//         text-shadow: 3px -2px 4px #575252bf;
+
+//     }
+
+//     .banner_view_btn {
+//         border: none;
+//         padding: 10px 20px;
+//         background: $btn_bg_grey;
+//         color: #fff;
+//         text-transform: uppercase;
+//         font-size: 0.8rem;
+//         margin-top: 40px;
+//         cursor: pointer;
+//     }
+// }
 
 .ayah_section {
     background-color: $primary_color;

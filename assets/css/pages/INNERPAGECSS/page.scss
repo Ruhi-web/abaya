@@ -9,6 +9,25 @@
     min-height: 70vh;
     margin-top: 60px;
 }
+.navbar-brand {
+    
+    color: #fff !important;
+
+    &:hover {
+        color: #b38292;
+    }
+}
+.nav_menu {
+
+    a {
+        
+        color: #fff !important;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
 
 .pages_nav {
     background-color: #566b85 !important;

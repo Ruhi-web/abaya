@@ -47,43 +47,41 @@ img {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: #fff !important;
   transition: ease-out;
+  border-bottom: 1px solid #566b85;
+}
+nav .wrap_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 nav .navbar-brand {
   font-family: "Scriptina";
-  font-size: 2rem;
+  font-size: 2.8rem;
+  color: #566b85;
+  margin-bottom: 30px;
 }
 nav .navbar-brand:hover {
-  color: #fff;
-}
-nav a {
-  color: #fff;
+  color: #b38292;
 }
 nav .nav_menu a {
   font-family: inherit;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: #566b85;
 }
 nav .nav_menu a:hover {
-  color: #fff;
+  color: #000;
 }
 
 .first_section {
-  background-image: url("../../../images/banner_image.png");
+  background-image: url("../../../images/aureConnect/bannerAzure.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  position: relative;
-}
-.first_section:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 .first_section .slideInUp {
   -webkit-animation-name: slideInUp;
@@ -111,31 +109,90 @@ nav .nav_menu a:hover {
     transform: translateY(0);
   }
 }
-.first_section .first_section_text {
-  text-align: center;
-  color: #fff;
-  line-height: 25px;
-  z-index: 999;
+.first_section .first_section_cards {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-.first_section h1 {
-  font-size: 5rem;
-  line-height: 2;
-  text-shadow: 3px -2px 4px #575252bf;
-  font-family: "Dancing Script";
-}
-.first_section p {
-  word-spacing: 8pt;
-  text-shadow: 3px -2px 4px #575252bf;
-}
-.first_section .banner_view_btn {
-  border: none;
-  padding: 10px 20px;
-  background: #00000075;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin-top: 40px;
+.first_section .first_section_cards .azure_section {
+  width: 18%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+  border: 10px solid white;
   cursor: pointer;
+}
+.first_section .first_section_cards .azure_section img {
+  border: 10px solid white;
+}
+.first_section .first_section_cards .inverse {
+  filter: grayscale(1);
+}
+.first_section .first_section_cards .azureHijab {
+  background-image: url(../../../images/aureConnect/azurehijab.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #8e24aaad;
+  height: 52vh;
+  width: 32%;
+  position: absolute;
+  top: 325px;
+  left: 130px;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+  box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+}
+.first_section .first_section_cards .azureHijab:hover {
+  height: 53vh;
+  width: 33%;
+}
+.first_section .first_section_cards .azure2 {
+  background-image: url(../../../images/accessories.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+  width: 26%;
+  height: 50vh;
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+  box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  filter: grayscale(1);
+}
+.first_section .first_section_cards .azure2:hover {
+  width: 27%;
+  height: 51vh;
+}
+.first_section .first_section_cards .azure3 {
+  background-image: url(../../../images/bakery1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #7cb342;
+  width: 24%;
+  height: 56vh;
+  position: absolute;
+  top: 30%;
+  left: 61%;
+  z-index: 0;
+  transition: 0.5s ease-in-out;
+  filter: grayscale(1);
+  box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+}
+.first_section .first_section_cards .azure3:hover {
+  width: 25%;
+  height: 57vh;
 }
 
 .ayah_section {

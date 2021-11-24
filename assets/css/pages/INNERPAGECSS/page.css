@@ -6,6 +6,20 @@
   margin-top: 60px;
 }
 
+.navbar-brand {
+  color: #fff !important;
+}
+.navbar-brand:hover {
+  color: #b38292;
+}
+
+.nav_menu a {
+  color: #fff !important;
+}
+.nav_menu a:hover {
+  color: #000;
+}
+
 .pages_nav {
   background-color: #566b85 !important;
 }

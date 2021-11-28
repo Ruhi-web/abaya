@@ -169,6 +169,7 @@ nav {
             box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+            filter: grayscale(1);
 
             &:hover {
                 height: 53vh;
@@ -193,7 +194,6 @@ nav {
             box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-            filter: grayscale(1);
             &:hover {
                 width: 27%;
                 height: 51vh;           

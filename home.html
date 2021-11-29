@@ -61,7 +61,7 @@
                     <a class=" nav-item nav-link" href="#abt_section">about</a>
                             <span style="color:aliceblue"">_</span>
                                   
-                    <a class=" nav-item nav-link" href="#">Contact us</a>
+                    <a class=" nav-item nav-link" href="#contact_section">Contact us</a>
                     
                         
                     
@@ -98,7 +98,65 @@
             </div>
         </div>
     </section>
-   
+    <section class="section contact_section" id="contact_section">
+        <div class="container">
+            <div class="section_title text-center mb-lg-4">
+                <h1>Contact Us</h1>
+                <hr>
+            </div>
+            <div class="row contact_form">
+                <form action="https://formspree.io/f/xvodeqwy" method="POST" class="col-md-5">
+                    <div class="form-group">
+                        <input type="text" placeholder="name" name="name" class="form-control" id="exampleInputName"
+                            aria-describedby="nameHelp" required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="email" name="email" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="phone" name="phone" class="form-control"
+                            id="exampleInputPhone" aria-describedby="phoneHelp" required="true">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="message" name="message"
+                            id="exampleFormControlTextarea1" rows="3" required="true"></textarea>
+                    </div>
+                    <button type="submit" id="submitForm" class="btn form_submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section footer">
+        <div class="container">
+            <div class="row text-left pt-4">
+                <div class="col-md footer_menu_links">
+                    <ul>
+                        <li><a href="">Home</a></li><span class="footer_line">|</span>
+
+                        <li><a href="../../pages/size.html">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-md footer_menu_links footer_text">
+                    <h1 class="azure_footer" style="color: #fff;">
+                        Azure Fashions</h1>
+                </div>
+                <div class="col-md footer_menu_links">
+                    <ul>
+                        <li><a href="#about_section"> About us</a></li><span class="footer_line">|</span>
+
+                        <li><a href="#contact_section">Contact us</a></li><span class="footer_line">|</span>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <span class="copy_right">Copyright © 2021 Azure Fashions</span>
+            </div>
+        </div>
+
+    </section>
     
     <script src="./assets/js/jqueryJs/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrapjs/bootstrap.min.js"></script>

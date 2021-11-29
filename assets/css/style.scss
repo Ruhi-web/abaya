@@ -58,6 +58,10 @@ img {
     }
 }
 
+.section {
+    margin-top: 40px;
+}
+
 nav {
 
     background-color: #fff !important;
@@ -259,6 +263,61 @@ nav {
         font-family: 'Dancing Script';
         font-size: 1.5rem;
     }
+}
+
+.contact_section {
+    .contact_form {
+
+        @include disp_flex();
+
+        form {
+            .form_submit {
+                background-color: $primary_color;
+                color: $primary_white_text;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $primary_color;
+
+    span.copy_right {
+        font-size: 0.8rem;
+        color: #fff;
+    }
+
+    ul {
+        .footer_line {
+            display: none;
+        }
+
+        li {
+            list-style: none;
+            color: $primary_white_text
+        }
+    }
+
+    .footer_menu_links {
+
+        @include disp_flex();
+
+        ul li a {
+            cursor: pointer;
+            color: $primary_white_text;
+
+            &:hover {
+                color: $primary_white_text;
+                text-decoration-line: none;
+            }
+        }
+    }
+
+    .azure_footer {
+        font-family: 'Scriptina';
+        font-size: 2rem;
+    }
+
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 

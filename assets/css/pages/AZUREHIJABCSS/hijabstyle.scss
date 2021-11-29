@@ -371,158 +371,16 @@ nav {
 
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
-
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2){
     nav {
-        .social-icon {
-            display: none;
-        }
+       
 
         .nav_menu {
             background-color: $primary_color;
 
-            .navbar-nav {
-                span {
-                    text-align: center;
-                }
-            }
-        }
-    }
-    .whatsapp{
-        
-        width: 22%;
-       
-    }
-
-        .first_section {
-    
-            min-height: 180vh;
-    
-            .first_section_cards {
-                .azureHijab {
-    
-                    height: 40vh;
-                    width: 68%;
-                    position: absolute;
-                    top: 198px;
-                    left: 45px;
-                }
-    
-                .azure2 {
-                    width: 68%;
-                    height: 40vh;
-                    position: absolute;
-                    top: 83%;
-                    left: 14%;
-                }
-    
-                  .azure3{
-                    width: 68%;
-                    height: 40vh;
-                    position: absolute;
-                    top: 130%;
-                    left: 14%;
-                    box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-                -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-                }
-            }
-    
-    
-    
+          
         }
     
-
-    ._first_section {
-
-        background-image: url(../images/banner_image.png);
-        background-position: left;
-
-        h1 {
-            font-size: 2.5rem;
-            line-height: 1;
-        }
-
-        p {
-            word-spacing: 2pt;
-        }
-
-    }
-
-    .about_section {
-        .about_left {
-            width: 100%;
-            margin-left: 0;
-            height: 55vh;
-        }
-
-        .about_right {
-            position: static !important;
-            transform: none;
-
-            .about_text {
-                h3 {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-
-    .second_section {
-        .card_collection {
-
-            .card {
-                margin: 25px;
-            }
-        }
-    }
-
-    .ayah_section {
-        .ayah_text {
-            margin: 20px;
-        }
-
-        p {
-
-            font-size: 1rem;
-        }
-    }
-
-    .section_title {
-        h1 {
-
-            font-size: 2rem;
-        }
-    }
-
-    .footer {
-        span.copy_right {
-            font-size: 0.5rem;
-
-        }
-
-        .azure_footer {
-            font-size: 1.5rem;
-            padding: 15px;
-        }
-
-        ul {
-            .footer_line {
-                display: contents;
-            }
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 0;
-
-            li {
-                font-size: 0.8rem;
-                padding: 10px;
-            }
-        }
-    }
 }
 
 // For Tab screen

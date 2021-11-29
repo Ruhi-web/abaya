@@ -12,6 +12,9 @@ $primary_white_text: #fff;
 $nav_bg_color: rgba(0, 0, 0, 0.165);
 $btn_bg_grey: #00000075;
 $primary_color: #566b85;
+$primary_pink_color: #d7a7b7;
+$secondary_pink_color: #b38292;
+
 
 
 
@@ -77,7 +80,7 @@ nav {
     .navbar-brand {
         font-family: 'Scriptina';
         font-size: 2.8rem;
-        color: #b38292;
+        color: $secondary_pink_color;
         margin-bottom: 30px;
 
         &:hover {
@@ -92,7 +95,7 @@ nav {
             font-family: inherit;
             text-transform: uppercase;
             font-size: 1rem;
-            color: #d7a7b7;
+            color: $primary_pink_color;
 
             &:hover {
                 color: #000;
@@ -240,13 +243,13 @@ nav {
     margin-top: 40px;
     min-height: 70vh;
     .banner_text{
-        border: 1px solid #d7a7b7;
+        border: 1px solid $primary_pink_color;
         padding: 65px;
         text-align: center;
-        color: #b38292;
-        box-shadow: -1px 2px 45px 3px #d7a7b7;
-            -webkit-box-shadow: -1px 2px 45px 3px #d7a7b7;
-            -moz-box-shadow: -1px 2px 45px 3px #d7a7b7;
+        color: $secondary_pink_color;
+        box-shadow: -1px 2px 45px 3px $primary_pink_color;
+            -webkit-box-shadow: -1px 2px 45px 3px $primary_pink_color;
+            -moz-box-shadow: -1px 2px 45px 3px $primary_pink_color;
         font-family: 'Dancing Script';
         font-size: 1.5rem;
     }
@@ -259,7 +262,7 @@ nav {
 
         form {
             .form_submit {
-                background-color: $primary_color;
+                background-color: $secondary_pink_color;
                 color: $primary_white_text;
             }
         }
@@ -267,7 +270,7 @@ nav {
 }
 
 .footer {
-    background-color: $primary_color;
+    background-color: $secondary_pink_color;
 
     span.copy_right {
         font-size: 0.8rem;

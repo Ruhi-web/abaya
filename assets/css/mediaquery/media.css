@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 767px) {
   nav .social-icon {
     display: none;
   }
@@ -62,6 +62,7 @@
   }
 
   .ayah_section .ayah_text {
+    padding: 20px;
     margin: 20px;
   }
   .ayah_section p {

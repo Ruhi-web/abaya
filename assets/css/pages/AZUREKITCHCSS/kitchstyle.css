@@ -89,6 +89,10 @@ nav .nav_menu a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
 }
 .first_section .first_section_cards {
   display: flex;
@@ -102,8 +106,8 @@ nav .nav_menu a:hover {
 .first_section .first_section_cards .azurehijab {
   position: absolute;
   z-index: 3;
-  left: 90px;
-  bottom: 18px;
+  left: 93px;
+  bottom: 35px;
   filter: grayscale(1);
 }
 .first_section .first_section_cards .azurehijab a img {

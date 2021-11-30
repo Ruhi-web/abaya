@@ -113,7 +113,10 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
     .first_section_cards {
 
         display: flex;
@@ -130,8 +133,8 @@ nav {
         .azurehijab {
             position: absolute;
             z-index: 3;
-            left: 90px;
-            bottom: 18px;
+            left: 93px;
+            bottom: 35px;
             filter: grayscale(1);
             a{
                 img{

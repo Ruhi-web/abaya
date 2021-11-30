@@ -11,31 +11,24 @@
   }
 
   .first_section {
-    min-height: 180vh;
+    margin-top: 140px;
   }
-  .first_section .first_section_cards .azureHijab {
-    height: 40vh;
-    width: 68%;
-    position: absolute;
-    top: 198px;
-    left: 45px;
+  .first_section .first_section_cards {
+    flex-direction: column;
+    padding: 20px;
   }
-  .first_section .first_section_cards .azure2 {
-    width: 68%;
-    height: 40vh;
-    position: absolute;
-    top: 83%;
-    left: 14%;
+  .first_section .first_section_cards .azure_section {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .first_section .first_section_cards .azure3 {
-    width: 68%;
-    height: 40vh;
-    position: absolute;
-    top: 130%;
-    left: 14%;
-    box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
+  .first_section .first_section_cards .azurehijab {
+    position: static;
+  }
+  .first_section .first_section_cards .azureKitch {
+    position: static;
+  }
+  .first_section .first_section_cards .azureBake {
+    position: static;
   }
 
   .about_section .about_left {

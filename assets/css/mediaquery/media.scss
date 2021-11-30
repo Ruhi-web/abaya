@@ -21,45 +21,29 @@
         width: 22%;
        
     }
+    .first_section {
+        margin-top: 140px;
 
-        .first_section {
-    
-            min-height: 180vh;
-    
-            .first_section_cards {
-                .azureHijab {
-    
-                    height: 40vh;
-                    width: 68%;
-                    position: absolute;
-                    top: 198px;
-                    left: 45px;
-                }
-    
-                .azure2 {
-                    width: 68%;
-                    height: 40vh;
-                    position: absolute;
-                    top: 83%;
-                    left: 14%;
-                }
-    
-                  .azure3{
-                    width: 68%;
-                    height: 40vh;
-                    position: absolute;
-                    top: 130%;
-                    left: 14%;
-                    box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-                -webkit-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: -1px 2px 45px 3px rgba(0, 0, 0, 0.75);
-                }
+        .first_section_cards {
+
+            flex-direction: column;
+            padding: 20px;
+            .azure_section {
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
-    
-    
-    
+            .azurehijab{
+                position: static;
+            }
+            .azureKitch{
+                position: static;
+            }
+            .azureBake{
+                position: static;
+            }
+
         }
-    
+    }
 
     .about_section {
         .about_left {
@@ -122,7 +106,7 @@
             .footer_line {
                 display: contents;
             }
-
+           
             display: flex;
             justify-content: center;
             align-items: center;

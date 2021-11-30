@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Regular.woff2') format('woff2'),
+        url('../../fonts/DancingScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$primary_dark_color: #000;
+$primary_white_text: #fff;
+$primary_color: #566b85;
+$primary_pink: #d7a7b7;
+
+
+
+@mixin disp_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, sans-serif !important;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.section_title {
+    color: $primary_color;
+    font-family: 'Dancing Script';
+    text-transform: uppercase;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 6%;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+
+        width: 7%;
+    }
+}
+
+nav {
+
+    background-color: #fff !important;
+    transition: ease-out;
+    border-bottom: 1px solid $primary_color;
+
+    .wrap_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        font-family: 'Scriptina';
+        font-size: 2.8rem;
+        color: $primary_color;
+        margin-bottom: 30px;
+
+        &:hover {
+            color: #b38292;
+        }
+    }
+
+
+    .nav_menu {
+
+        a {
+            font-family: inherit;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $primary_color;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+.first_section {
+    background-image: url('../../../images/aureConnect/bannerAzure.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    .first_section_cards {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .azure_section {
+            img {
+                border: 10px solid #fff;
+            }
+        }
+
+        .azurehijab {
+            position: absolute;
+            z-index: 3;
+            left: 90px;
+            bottom: 18px;
+        }
+        .azureKitch{
+            z-index: 2;
+        }
+
+        .azureBake {
+            position: absolute;
+            right: 86px;
+            bottom: 120px;        
+            z-index: 1;
+        }
+    }
+
+
+}
+
+
+.about_section {
+    position: relative;
+
+    .about_left {
+        // width: 80%;
+        // margin-left: 100px;
+        height: 80vh;
+        filter: brightness(120%);
+        background: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../../images/abaya/Sand_1.png);
+    }
+
+    .about_right {
+        border: 1px solid #959090;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        box-shadow: 5px 6px 10px 1px #959090;
+        ;
+        -webkit-box-shadow: 5px 6px 10px 1px #959090;
+        ;
+        -moz-box-shadow: 5px 6px 10px 1px #959090;
+        ;
+
+        .about_text {
+            padding: 15px;
+
+            h3 {
+                font-size: 3rem;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.second_section {
+
+    .card_collection {
+        @include disp_flex;
+
+        .card {
+
+            margin: 20px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            filter: brightness(110%);
+
+            &:hover {
+                box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
+                -webkit-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
+                -moz-box-shadow: 9px -5px 18px -4px rgba(0, 0, 0, 0.65);
+            }
+
+            a.card_link {
+                color: $primary_dark_color;
+                text-decoration-line: none;
+            }
+
+            .card_desc_title {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.contact_section {
+    .contact_form {
+
+        @include disp_flex();
+
+        form {
+            .form_submit {
+                background-color: $primary_color;
+                color: $primary_white_text;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $primary_color;
+
+    span.copy_right {
+        font-size: 0.8rem;
+        color: #fff;
+    }
+
+    ul {
+        .footer_line {
+            display: none;
+        }
+
+        li {
+            list-style: none;
+            color: $primary_white_text
+        }
+    }
+
+    .footer_menu_links {
+
+        @include disp_flex();
+
+        ul li a {
+            cursor: pointer;
+            color: $primary_white_text;
+
+            &:hover {
+                color: $primary_white_text;
+                text-decoration-line: none;
+            }
+        }
+    }
+
+    .azure_footer {
+        font-family: 'Scriptina';
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
+    nav {
+
+        .nav_menu {
+            background-color: $primary_color;
+
+
+        }
+
+    }
+
+ 
+
+}

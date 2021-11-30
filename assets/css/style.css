@@ -300,6 +300,7 @@ nav .nav_menu a:hover {
   }
   .footer ul .footer_line {
     display: contents;
+    color: #fff;
   }
   .footer ul li {
     font-size: 0.8rem;

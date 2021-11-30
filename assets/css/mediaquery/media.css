@@ -12,6 +12,9 @@
   nav .nav_menu a {
     color: #fff;
   }
+  nav .nav_menu .navbar-nav {
+    text-align: center;
+  }
   nav .nav_menu .navbar-nav span {
     text-align: center;
   }
@@ -84,9 +87,14 @@
   }
   .footer ul .footer_line {
     display: contents;
+    color: #fff;
   }
   .footer ul li {
     font-size: 0.8rem;
     padding: 10px;
+  }
+
+  .page__section .page_title {
+    margin-top: 110px;
   }
 }/*# sourceMappingURL=media.css.map */

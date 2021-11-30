@@ -205,4 +205,10 @@ nav .nav_menu a:hover {
 .footer .azure_footer {
   font-family: "Scriptina";
   font-size: 2rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav .nav_menu a {
+    color: #b38292 !important;
+  }
 }/*# sourceMappingURL=style.css.map */

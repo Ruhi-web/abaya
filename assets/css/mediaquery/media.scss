@@ -5,7 +5,9 @@
         .social-icon {
             display: none;
         }
-
+        .navbar-brand{
+            margin-bottom: 12px;
+        }
         .nav_menu {
             // background-color: $primary_color;
 
@@ -27,7 +29,7 @@
         .first_section_cards {
 
             flex-direction: column;
-            padding: 20px;
+            padding: 45px;
             .azure_section {
                 margin-top: 10px;
                 margin-bottom: 10px;

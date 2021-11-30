@@ -2,6 +2,9 @@
   nav .social-icon {
     display: none;
   }
+  nav .navbar-brand {
+    margin-bottom: 12px;
+  }
   nav .nav_menu .navbar-nav span {
     text-align: center;
   }
@@ -15,7 +18,7 @@
   }
   .first_section .first_section_cards {
     flex-direction: column;
-    padding: 20px;
+    padding: 45px;
   }
   .first_section .first_section_cards .azure_section {
     margin-top: 10px;

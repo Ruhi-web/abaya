@@ -208,7 +208,101 @@ nav .nav_menu a:hover {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav .nav_menu .dropdown-menu {
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav .social-icon {
+    display: none;
+  }
+  nav .navbar-brand {
+    margin-bottom: 12px;
+  }
+  nav .nav_menu {
+    width: 100%;
+  }
+  nav .nav_menu .dropdown-menu {
+    text-align: center;
+  }
   nav .nav_menu a {
-    color: #b38292 !important;
+    color: #b38292;
+  }
+  nav .nav_menu .navbar-nav span {
+    text-align: center;
+  }
+
+  .whatsapp {
+    width: 22%;
+  }
+
+  .first_section {
+    margin-top: 140px;
+  }
+  .first_section .first_section_cards {
+    flex-direction: column;
+    padding: 45px;
+  }
+  .first_section .first_section_cards .azure_section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .first_section .first_section_cards .azurehijab {
+    position: static;
+  }
+  .first_section .first_section_cards .azureKitch {
+    position: static;
+  }
+  .first_section .first_section_cards .azureBake {
+    position: static;
+  }
+
+  .about_section .about_left {
+    width: 100%;
+    margin-left: 0;
+    height: 55vh;
+  }
+  .about_section .about_right {
+    position: static !important;
+    transform: none;
+  }
+  .about_section .about_right .about_text h3 {
+    font-size: 2rem;
+  }
+
+  .second_section .card_collection .card {
+    margin: 25px;
+  }
+
+  .ayah_section .ayah_text {
+    margin: 20px;
+  }
+  .ayah_section p {
+    font-size: 1rem;
+  }
+
+  .section_title h1 {
+    font-size: 2rem;
+  }
+
+  .footer span.copy_right {
+    font-size: 0.5rem;
+  }
+  .footer .azure_footer {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .footer ul .footer_line {
+    display: contents;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

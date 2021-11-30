@@ -10,7 +10,10 @@
         }
         .nav_menu {
             // background-color: $primary_color;
-
+            width: 100%;
+            a{
+                color: #fff;
+            }
             .navbar-nav {
                 span {
                     text-align: center;

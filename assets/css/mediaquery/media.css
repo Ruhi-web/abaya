@@ -5,6 +5,12 @@
   nav .navbar-brand {
     margin-bottom: 12px;
   }
+  nav .nav_menu {
+    width: 100%;
+  }
+  nav .nav_menu a {
+    color: #fff;
+  }
   nav .nav_menu .navbar-nav span {
     text-align: center;
   }

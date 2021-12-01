@@ -212,11 +212,6 @@ nav .nav_menu a:hover {
 }
 
 @media (max-width: 767px) {
-  nav .nav_menu .dropdown-menu {
-    text-align: center;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 520px) and (-webkit-min-device-pixel-ratio: 2) {
   nav .social-icon {
     display: none;
   }

@@ -154,7 +154,7 @@ nav .nav_menu a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../../../images/azureKitch/decorPlate.jpeg);
+  background-image: url(../../../images/azureKitch/accessories_1.jpeg);
 }
 .about_section .about_right {
   border: 1px solid #959090;
@@ -241,4 +241,14 @@ nav .nav_menu a:hover {
 .footer .azure_footer {
   font-family: "Scriptina";
   font-size: 2rem;
+}
+
+.products_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products_section .products {
+  padding: 40px;
+  cursor: pointer;
 }/*# sourceMappingURL=kitchstyle.css.map */

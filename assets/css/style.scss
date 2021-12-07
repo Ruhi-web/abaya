@@ -50,6 +50,7 @@ html {
 body {
     font-family: 'Times New Roman', Times, sans-serif !important;
     overflow: scroll;
+    padding-top: 70px; 
 }
 
 img {
@@ -288,7 +289,26 @@ nav {
         font-size: 2rem;
     }
 
+
 }   
+
+
+.wip{
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d7a7b752;
+    color: #d7a7b7; 
+    .wip_text{
+        background-color: #fff;
+        padding: 10px;
+     h1{
+        font-size: 2.8rem;
+        text-transform: uppercase;
+     }
+    }
+}
 
 @media (max-width: 767px)
 {

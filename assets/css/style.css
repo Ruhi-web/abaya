@@ -75,7 +75,13 @@ nav .nav_menu a {
   color: #d7a7b7;
 }
 nav .nav_menu a:hover {
-  color: #000;
+  color: #b38292;
+}
+nav .nav_menu a:active {
+  background-color: #d7a7b7 !important;
+}
+nav .nav_menu .dropdown .dropdown-item:active {
+  background-color: #d7a7b7 !important;
 }
 
 .first_section {

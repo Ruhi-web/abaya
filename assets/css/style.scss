@@ -72,6 +72,8 @@ img {
     }
 }
 
+
+
 .section {
     margin-top: 40px;
 }
@@ -109,7 +111,18 @@ nav {
             color: $primary_pink_color;
 
             &:hover {
-                color: #000;
+                color: #b38292;
+            }
+            &:active{
+                background-color: #d7a7b7 !important;
+            }
+        }
+        .dropdown{
+
+            .dropdown-item{
+                &:active{
+                    background-color: #d7a7b7 !important;
+                }
             }
         }
     }

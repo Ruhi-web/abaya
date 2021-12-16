@@ -104,7 +104,6 @@ nav .nav_menu a:hover {
   border: 10px solid #fff;
 }
 .first_section .first_section_cards .azurehijab {
-  position: absolute;
   z-index: 3;
   left: 93px;
   bottom: 35px;
